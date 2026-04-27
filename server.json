@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.MukundaKatta/agentguard",
+  "description": "Network-egress firewall for agent tools. Check whether a URL is allowed under a declarative policy before any fetch.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/MukundaKatta/agentguard-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/MukundaKatta/agentguard-mcp",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mukundakatta/agentguard-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

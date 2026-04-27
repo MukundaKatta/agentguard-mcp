@@ -1,0 +1,57 @@
+{
+  "name": "@mukundakatta/agentguard-mcp",
+  "version": "0.1.0",
+  "mcpName": "io.github.MukundaKatta/agentguard",
+  "description": "MCP server for agentguard: declarative network-egress firewall for agent tools. Check whether a URL is allowed under a policy before any fetch.",
+  "type": "module",
+  "bin": {
+    "mcp-agentguard": "dist/server.js"
+  },
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "test": "node --test --import tsx test/*.test.ts",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "cline",
+    "windsurf",
+    "zed",
+    "security",
+    "firewall",
+    "egress",
+    "agent",
+    "sandbox"
+  ],
+  "author": "Mukunda Katta <mukunda.vjcs6@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/MukundaKatta/agentguard-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MukundaKatta/agentguard-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@mukundakatta/agentguard": "^0.1.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
